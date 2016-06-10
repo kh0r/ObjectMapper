@@ -33,7 +33,7 @@ public class ISO8601DateTransform: DateFormatterTransform {
 	public init() {
 		let formatter = NSDateFormatter()
 		formatter.locale = NSLocale(localeIdentifier: "en_US_POSIX")
-		formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+		formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
 		
 		super.init(dateFormatter: formatter)
 	}
